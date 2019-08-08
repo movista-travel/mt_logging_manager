@@ -209,7 +209,7 @@ public struct MTLoggableError: Error {
     let message: String
     let errorCode: Int
     
-    init(error: Error, file: String = #file, function: String = #function, line: Int = #line, errorCode: Int) {
+    public init(error: Error, file: String = #file, function: String = #function, line: Int = #line, errorCode: Int) {
         let fileName: String
         if let name = file.split(separator: "/").last {
             fileName = String(name)
@@ -228,7 +228,7 @@ extension MTLoggableError: LocalizedError {
     }
 }
 
-enum MTLoggerError: Error {
+public enum MTLoggerError: Error {
     case unhandledState(description: String)
 }
 
