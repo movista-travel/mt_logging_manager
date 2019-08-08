@@ -9,7 +9,6 @@ import Foundation
 import Crashlytics
 import SwiftyBeaver
 
-public let logger: IMTLoggingManager = MTLoggingManager.shared
 //5065
 public final class MTLoggingManager {
     
@@ -33,7 +32,7 @@ public final class MTLoggingManager {
         return dateFormatter
     }
     
-    enum Environment {
+   public enum Environment {
         case production
         case stage
         case test
@@ -42,7 +41,7 @@ public final class MTLoggingManager {
     private let environment: Environment
     private let kApplicationGroupID: String
     
-    static func create(environment: Environment, kApplicationGroupID: String) {
+    public static func create(environment: Environment, kApplicationGroupID: String) {
         MTLoggingManager.shared = MTLoggingManager(environment: environment, kApplicationGroupID: kApplicationGroupID)
     }
     
@@ -99,7 +98,7 @@ public final class MTLoggingManager {
         }
     }
     
-    static var shared: MTLoggingManager!
+    public static var shared: MTLoggingManager!
 
     private func healthCheckLogs() {
         print("health check logs:", logs)
