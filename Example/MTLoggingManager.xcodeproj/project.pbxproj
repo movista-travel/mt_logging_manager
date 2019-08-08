@@ -12,10 +12,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D57C96B83B6F70A690C6BC7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0D57C96B83B6F70A690C6BC7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		225D34D15A41F2383E10E1CE /* Pods-MTLoggingManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTLoggingManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-MTLoggingManager_Tests/Pods-MTLoggingManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		34482CF6D43C65E261661891 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		606B69859695B21D6435B98A /* MTLoggingManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MTLoggingManager.podspec; path = ../MTLoggingManager.podspec; sourceTree = "<group>"; };
+		34482CF6D43C65E261661891 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		606B69859695B21D6435B98A /* MTLoggingManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MTLoggingManager.podspec; path = ../MTLoggingManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACE51AFB9204008FA782 /* MTLoggingManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTLoggingManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -49,7 +49,6 @@
 				DA94EC2E388738DE91DA514D /* Pods-MTLoggingManager_Tests.debug.xcconfig */,
 				225D34D15A41F2383E10E1CE /* Pods-MTLoggingManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,10 +130,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -147,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -200,11 +196,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MTLoggingManager_Tests/Pods-MTLoggingManager_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MTLoggingManager/MTLoggingManager.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTLoggingManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

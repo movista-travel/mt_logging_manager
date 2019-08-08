@@ -1,6 +1,4 @@
 use_frameworks!
 target 'MTLoggingManager_Tests' do
   pod 'MTLoggingManager', :path => '../'
-  
-  
 end

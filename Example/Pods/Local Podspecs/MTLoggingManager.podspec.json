@@ -1,0 +1,40 @@
+{
+  "name": "MTLoggingManager",
+  "version": "0.1.0",
+  "summary": "A short description of MTLoggingManager.",
+  "static_framework": true,
+  "homepage": "https://github.com/movista-travel/mt_logging_manager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "juicyfru1t": "akhodko@movista.ru"
+  },
+  "source": {
+    "git": "https://github.com/movista-travel/mt_logging_manager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MTLoggingManager/Classes/**/*",
+  "swift_versions": [
+    "5.0"
+  ],
+  "dependencies": {
+    "SwiftyBeaver": [
+
+    ],
+    "Fabric": [
+
+    ],
+    "Crashlytics": [
+
+    ]
+  },
+  "pod_target_xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "$(inherited) $(PODS_ROOT)/Crashlytics/iOS"
+  },
+  "swift_version": "5.0"
+}
